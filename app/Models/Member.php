@@ -15,4 +15,9 @@ class Member extends Model
     {
         return $this->hasMany(Income::class, 'member_name', 'name');
     }
+
+    public function getLinkAttribute()
+    {
+        return route('receipt.show', $this->id);
+    }
 }

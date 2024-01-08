@@ -16,3 +16,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/members', function () {
+    return view('member.list', [
+        'members' => \App\Models\Member::all(),
+    ]);
+});
+
+Route::get('/receipts/member/{id}', function () {
+
+    return view('receipt.show', [
+        'members' => \App\Models\Member::all(),
+    ]);
+})->name('receipt.show');
