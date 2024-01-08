@@ -10,4 +10,9 @@ class Member extends Model
     use HasFactory;
 
     protected $guarded = [];
+
+    public function incomes()
+    {
+        return $this->hasMany(Income::class, 'member_name', 'name');
+    }
 }
