@@ -13,7 +13,9 @@
         @foreach($members as $member)
             <div class="relative flex items-center space-x-3 rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:border-gray-400">
                 <div class="flex-shrink-0">
-                    <img class="h-10 w-10 rounded-full" src="https://i.pravatar.cc/50?u={{rand(1000, 9999)}}" alt="">
+                    @if($member->hasImages)
+                        <img class="h-10 w-10 rounded-full" src="https://i.pravatar.cc/50?u={{rand(1000, 9999)}}" alt="">
+                    @endif
                 </div>
                 <div class="min-w-0 flex-1">
                     <a href="{{$member->link}}" class="focus:outline-none">

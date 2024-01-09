@@ -31,4 +31,9 @@ class Member extends Model
     {
         return asset('images/'. $this->identifier . '_2.png');
     }
+
+    public function getHasImagesAttribute()
+    {
+        return Storage::exists('public/images/'. $this->identifier . '_1.png') && Storage::exists('public/images/'. $this->identifier . '_2.png');
+    }
 }
