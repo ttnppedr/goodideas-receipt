@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 class Member extends Model
 {
@@ -18,6 +19,16 @@ class Member extends Model
 
     public function getLinkAttribute()
     {
-        return route('receipt.show', $this->id);
+        return route('receipt.list', $this->id);
+    }
+
+    public function getFirstImageAttribute()
+    {
+        return asset('images/'. $this->identifier . '_1.png');
+    }
+
+    public function getSecondImageAttribute()
+    {
+        return asset('images/'. $this->identifier . '_2.png');
     }
 }

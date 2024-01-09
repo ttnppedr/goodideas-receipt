@@ -23,9 +23,14 @@ Route::get('/members', function () {
     ]);
 });
 
-Route::get('/receipts/member/{id}', function () {
+Route::get('/receipts/member/{memberId}', function () {
 
-    return view('receipt.show', [
-        'members' => \App\Models\Member::all(),
-    ]);
-})->name('receipt.show');
+    $memberId = request()->route('memberId');
+    $member = \App\Models\Member::whereId($memberId)->with('incomes')->firstOrFail();
+
+    $receiptGroupByDate = $member->incomes->groupBy(function ($item, $key) {
+        return $item->date->format('Y-m');
+    });
+
+    return view('receipt.list', compact('member', 'receiptGroupByDate'));
+})->name('receipt.list');

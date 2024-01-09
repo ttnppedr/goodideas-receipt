@@ -1,53 +1,3 @@
-<html>
-
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>好想股份有限公司 綜合所得收據</title>
-    <meta name="generator" content="LibreOffice 6.1.5.2 (Linux)">
-    <meta name="created" content="00:00:00">
-    <meta name="changed" content="00:00:00">
-    <style type="text/css">
-        @media print {
-            @page {
-                size: A4 portrait;
-                margin: 10mm;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                word-wrap: break-word;
-            }
-        }
-
-        body {
-            -webkit-print-color-adjust: exact !important;
-        }
-
-        p {
-            line-height: 115%;
-            background: transparent;
-            padding: 8px;
-            margin: 0 !important;
-        }
-
-        table {
-            margin: 0 auto 50px;
-            page-break-before: always;
-        }
-
-        table,
-        th,
-        td {
-            border: 1px solid;
-            vertical-align: middle;
-            padding: 0;
-        }
-    </style>
-</head>
-
-<body>
-
 <table width="900" cellpadding="2" cellspacing="0">
     <colgroup>
         <col width="105">
@@ -845,7 +795,3 @@
     </tr>
     </tbody>
 </table>
-
-</body>
-
-</html>
