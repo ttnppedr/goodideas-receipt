@@ -3,8 +3,8 @@
 - `storage/app/income.csv` : 收入資料
 
 # 人員圖片放置路徑及檔名規則
-- `storage/app/public/images/{身份證字號}_1.jpg` : 人員正面圖片
-- `storage/app/public/images/{身份證字號}_2.jpg` : 人員反面圖片
+- `storage/app/public/images/{身份證字號}_1.png` : 人員正面圖片
+- `storage/app/public/images/{身份證字號}_2.png` : 人員反面圖片
 
 ## 放置圖片前需先執行以下指令
 `php artisan storage:link` : 建立連結
