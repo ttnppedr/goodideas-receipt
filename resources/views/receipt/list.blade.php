@@ -354,14 +354,19 @@
                     <span>說明</span>
                 </p>
             </td>
-            <td colspan="10" width="371" bgcolor="#e6e6e6" style="background: #e6e6e6">
+            <td colspan="8" width="371" bgcolor="#e6e6e6" style="background: #e6e6e6">
                 <p style="text-align: center;">
                     <span style="font-size: 12pt">稅率 / 稅額</span>
                 </p>
             </td>
+            <td colspan="2" width="200" bgcolor="#e6e6e6" style="background: #e6e6e6">
+                <p style="text-align: center;">
+                    <span style="font-size: 12pt">二代健保保費</span>
+                </p>
+            </td>
         </tr>
         <tr>
-            <td colspan="8" width="192" bgcolor="#e6e6e6" style="background: #e6e6e6">
+            <td colspan="4" width="192" bgcolor="#e6e6e6" style="background: #e6e6e6">
                 <p style="text-align: center;" style="margin-bottom: 0in; padding: 0">
                     <span style="font-size: 12pt">居住者</span>
                 </p>
@@ -371,13 +376,20 @@
                             </span>
                 </p>
             </td>
-            <td colspan="2" width="175" bgcolor="#e6e6e6" style="background: #e6e6e6; padding: 8px 0;">
+            <td colspan="4" width="175" bgcolor="#e6e6e6" style="background: #e6e6e6; padding: 8px 0;">
                 <p style="text-align: center;" style="margin-bottom: 0in; padding: 0;">
                     <span style="font-size: 12pt">非居住者</span>
                 </p>
                 <p style="text-align: center;" style="padding: 0;">
                             <span style="font-size: 12pt">
                                 一課稅年度居住未滿 183 天
+                            </span>
+                </p>
+            </td>
+            <td colspan="2" width="175" bgcolor="#e6e6e6" style="background: #e6e6e6; padding: 8px 0;">
+                <p style="text-align: center;" style="padding: 0;">
+                            <span style="font-size: 12pt">
+                                代扣補充保費
                             </span>
                 </p>
             </td>
@@ -393,22 +405,32 @@
                     <span style="font-size: 12pt; line-height: 20px;">律師、會計師、建築師、技師、地政士、記帳士等</span>
                 </p>
             </td>
-            <td width="38" style="border: 1px solid #000000; padding: 0in 0.02in">
+            <td colspan="2" width="50" style="border: 1px solid #000000; padding: 0in 0.02in">
                 <p>
                     <span style="font-size: 12pt">10%</span>
                 </p>
             </td>
-            <td colspan="7" width="150" style="border: 1px solid #000000; padding: 0in 0.02in">
+            <td colspan="2" width="50" style="border: 1px solid #000000; padding: 0in 0.02in">
                 <p>
                     <br>
                 </p>
             </td>
-            <td width="38" style="border: 1px solid #000000; padding: 0in 0.02in">
+            <td colspan="2" width="50" style="border: 1px solid #000000; padding: 0in 0.02in">
                 <p>
                     <span style="font-size: 12pt">20%</span>
                 </p>
             </td>
-            <td width="133" style="border: 1px solid #000000; padding: 0in 0.02in">
+            <td colspan="2"  width="100"  style="border: 1px solid #000000; padding: 0in 0.02in">
+                <p>
+                    <br>
+                </p>
+            </td>
+            <td colspan="1" width="110" style="border: 1px solid #000000; padding: 0in 0.02in">
+                <p>
+                    <span style="font-size: 12pt">2.11%</span>
+                </p>
+            </td>
+            <td colspan="1" width="50"  style="border: 1px solid #000000; padding: 0in 0.02in">
                 <p>
                     <br>
                 </p>
@@ -426,7 +448,7 @@
                 </p>
                 <p>
                             <span style="font-size: 12pt">
-                                若請領金額數 [9B] 且不超過 5,000 元者，不須扣繳。
+                                [ 註 3] 補充保費：執行業務所得，單日超過 20,000元者，需扣補充保費 2.11%
                             </span>
                 </p>
             </td>
