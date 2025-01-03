@@ -30,7 +30,7 @@
 
         body>div {
             width: 100%;
-            padding-top: calc(100vh - 1300px + 5mm);
+            padding-top: calc(100vh - 1500px + 5mm);
         }
 
 
@@ -104,7 +104,7 @@
                     <span>{{$member->real_name}}</span>
                 </p>
             </td>
-            <td colspan="2" width="100" bgcolor="#e6e6e6" style="background: #e6e6e6">
+            <td colspan="3" width="100" bgcolor="#e6e6e6" style="background: #e6e6e6">
                 <p style="text-align: center;">
                     <span>身分證字號</span>
                 </p>
@@ -150,8 +150,8 @@
             </td>
         </tr>
         <tr>
-            <td colspan="3" width="259" height="19" bgcolor="#e6e6e6" style="background: #e6e6e6">
-                <p style="text-indent: -30px;text-align: center;">
+            <td colspan="4" width="259" height="19" bgcolor="#e6e6e6" style="background: #e6e6e6">
+                <p style="text-indent: -46px;text-align: center;">
                     <span>銀行名稱(若有匯款手續費另扣)</span>
                 </p>
             </td>
@@ -412,7 +412,7 @@
             </td>
             <td colspan="2" width="50" style="border: 1px solid #000000; padding: 0in 0.02in">
                 <p>
-                    <br>
+                    <span style="font-size: 12pt">{{App\Models\Income::sumAndFormatFor10($receipts, $i)}}</span>
                 </p>
             </td>
             <td colspan="2" width="50" style="border: 1px solid #000000; padding: 0in 0.02in">
@@ -432,7 +432,7 @@
             </td>
             <td colspan="1" width="50"  style="border: 1px solid #000000; padding: 0in 0.02in">
                 <p>
-                    <br>
+                    <span style="font-size: 12pt">{{App\Models\Income::sumAndFormatFor211($receipts, $i)}}</span>
                 </p>
             </td>
         </tr>

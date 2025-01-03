@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::get('/members', function () {
     return view('member.list', [
-        'members' => \App\Models\Member::all(),
+        'members' => \App\Models\Member::whereHas('incomes')->get(),
     ]);
 });
 
@@ -34,3 +34,13 @@ Route::get('/receipts/member/{memberId}', function () {
 
     return view('receipt.list', compact('member', 'receiptGroupByDate'));
 })->name('receipt.list');
+
+Route::get('/images/{filename}', function ($filename) {
+    $path = public_path('storage/images/' . $filename);
+
+    if (!file_exists($path)) {
+        abort(404);
+    }
+
+    return Response::file($path);
+});

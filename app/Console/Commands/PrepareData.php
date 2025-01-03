@@ -52,7 +52,6 @@ class PrepareData extends Command
                 'real_name'        => $member[1],
                 'name'             => $member[2],
                 'slack_name'       => $member[3],
-                'email'            => $member[4],
                 'cellphone'        => $member[5],
                 'bank_name'        => $member[6],
                 'bank_account'     => $member[7],
@@ -77,13 +76,21 @@ class PrepareData extends Command
                 continue;
             }
 
-            $amount = Str::replace('NT$', '', $income[6]);
+            $amount = Str::replace('NT$', '', $income[5]);
             $amount = Str::replace(',', '', $amount);
+
+            $amount10 = Str::replace('NT$', '', $income[7]);
+            $amount10 = Str::replace(',', '', $amount10);
+
+            $amount211 = Str::replace('NT$', '', $income[8]);
+            $amount211 = Str::replace(',', '', $amount211);
 
             Income::create([
                 'member_name' => $income[3],
                 'title'       => $income[4],
                 'amount'      => $amount,
+                'amount10'    => $amount10,
+                'amount211'   => $amount211,
                 'date'        => $income[0],
             ]);
         }

@@ -14,7 +14,7 @@ class Member extends Model
 
     public function incomes()
     {
-        return $this->hasMany(Income::class, 'member_name', 'name');
+        return $this->hasMany(Income::class, 'member_name', 'real_name');
     }
 
     public function getLinkAttribute()

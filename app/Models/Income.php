@@ -30,6 +30,28 @@ class Income extends Model
         return Number::format($sum);
     }
 
+    public static function sumAndFormatFor10($incomes, $i)
+    {
+        $sum = 0;
+
+        for ($j = $i; $j < $i+6; $j++) {
+            $sum += isset($incomes[$j]) ? $incomes[$j]['amount10'] : 0;
+        }
+
+        return Number::format($sum);
+    }
+
+    public static function sumAndFormatFor211($incomes, $i)
+    {
+        $sum = 0;
+
+        for ($j = $i; $j < $i+6; $j++) {
+            $sum += isset($incomes[$j]) ? $incomes[$j]['amount211'] : 0;
+        }
+
+        return Number::format($sum);
+    }
+
     public static function sumInChinese($incomes, $i, $showIndex)
     {
         $sum = 0;
