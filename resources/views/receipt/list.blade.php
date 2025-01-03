@@ -30,7 +30,7 @@
 
         body>div {
             width: 100%;
-            padding-top: calc(100vh - 1282px + 5mm);
+            padding-top: calc(100vh - 1300px + 5mm);
         }
 
 
@@ -439,7 +439,7 @@
         <tr>
             <td colspan="14" width="715" height="25" style="border: 1px solid #000000; padding: 0in 0.02in">
                 <p style="margin-bottom: 0in; font-size: 12pt">
-                            <span> [ 註 1] 居住者：稅額不超過 $2,000 者可不預先扣繳。 非固定薪資自 104 年開始，起扣額為 73,001 元
+                            <span> [ 註 1] 居住者：稅額不超過 $2,000 者可不預先扣繳。 非固定薪資自 104 年開始，起扣額為 73,001 元</span>
                 </p>
                 <p>
                             <span style="font-size: 12pt">
@@ -454,15 +454,15 @@
             </td>
         </tr>
         <tr>
-            <td colspan="14" width="715" height="187" style="border: 1px solid #000000; ">
+            <td colspan="14" width="715" height="250" style="border: 1px solid #000000; ">
                 <div style="display: flex; height: 100%;">
                     <div
                             style="display:flex; align-items: center; justify-content: center; height: 100%; width: 100%; border-right: 2px solid #000000;">
-                        <img style="width: 282px; height: 177px;" src="{{$member->firstImage}}" alt="身份證正面圖片">
+                        <img style="width: 360px; height: 236px;" src="{{$member->firstImage}}" alt="身份證正面圖片">
                     </div>
                     <div
                             style="display:flex; align-items: center; justify-content: center; height: 100%; width: 100%;">
-                        <img style="width: 282px; height: 177px;" src="{{$member->secondImage}}" alt="身份證反面圖片">
+                        <img style="width: 360px; height: 236px;" src="{{$member->secondImage}}" alt="身份證反面圖片">
                     </div>
                 </div>
             </td>
@@ -470,7 +470,7 @@
         <tr>
             <td colspan="14" width="715" height="84" style="border: 1px solid #000000; padding: 0in 0.02in">
                 <p style="margin-bottom: 0in">
-                            <span style="font-size: 12pt">上列款項已如數收訖， <b>並檢附本人身分證正反面影本乙份</b> ，
+                            <span style="font-size: 12pt">上列款項已如數收訖， <b>並檢附本人身分證正反面影本乙份</b> ，</span>
                 </p>
                 <p style="margin-bottom: 0in">
                     <span style="font-size: 12pt">此致 好想股份有限公司</span>

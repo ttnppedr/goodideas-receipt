@@ -11,3 +11,9 @@
 
 # 指令
 `php artisan app:prepare-data` : 導入並複蓋所有資料
+
+# 應用程式
+`Herd` : 需開啟本機的 Herd 的應用程式
+
+# 網頁路徑
+本機開啟路徑：http://goodideas-receipt.test/members

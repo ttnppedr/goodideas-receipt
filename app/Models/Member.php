@@ -24,16 +24,16 @@ class Member extends Model
 
     public function getFirstImageAttribute()
     {
-        return asset('images/'. $this->identifier . '_1.png');
+        return asset('images/'. $this->identifier . '_1.jpeg');
     }
 
     public function getSecondImageAttribute()
     {
-        return asset('images/'. $this->identifier . '_2.png');
+        return asset('images/'. $this->identifier . '_2.jpeg');
     }
 
     public function getHasImagesAttribute()
     {
-        return Storage::exists('public/images/'. $this->identifier . '_1.png') && Storage::exists('public/images/'. $this->identifier . '_2.png');
+        return Storage::exists('public/images/'. $this->identifier . '_1.jpeg') && Storage::exists('public/images/'. $this->identifier . '_2.jpeg');
     }
 }
